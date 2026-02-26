@@ -14,27 +14,21 @@ const EventTimelineSection = () => {
   const events = [
     {
       day: "Day 1",
-      date: "April 2, 2026",
-      title: "Opening Ceremony!",
-      desc: "Get ready for a day of fun and games, and meet your fellow participants.",
+      date: "March 23, 2026",
+      title: "Opening Genesis",
+      desc: "The ignition of innovaton. Join us for the grand inauguration, keynote sessions, and high-octane networking with mechanical pioneers.",
     },
     {
       day: "Day 2",
-      date: "April 3, 2026",
-      title: "Hardware Showdown!",
-      desc: "Learn how to build your own AR/VR hardware from scratch.",
+      date: "March 24, 2026",
+      title: "The Forge & Think-Tank",
+      desc: "A combined powerhouse session: witness intense hardware crafting in the Showdown while tackling complex engineering puzzles in the Brainstorming arena.",
     },
     {
       day: "Day 3",
-      date: "April 4, 2026",
-      title: "Brainstorming!",
-      desc: "Engage in a quiz debate and collaborative sessions to generate innovative ideas.",
-    },
-    {
-      day: "Final Night",
-      date: "April 4, 2026",
-      title: "Closing Ceremony",
-      desc: "Closing ceremony and awards presentation. Celebrate your achievements with your team!",
+      date: "March 25, 2026",
+      title: "Final Reckoning",
+      desc: "The culmination of three days of brilliance. Closing ceremony, winner unveilings, and the grand awards presentation.",
     },
   ];
 
@@ -70,6 +64,7 @@ const EventTimelineSection = () => {
             start: "top 85%",
             end: "top 60%",
             scrub: 1,
+            toggleClass: "is-active",
           },
         });
 
@@ -95,7 +90,7 @@ const EventTimelineSection = () => {
         
         {/* Header */}
         <div className="text-center mb-24 md:mb-40">
-          <h2 className="text-4xl md:text-8xl font-black text-white uppercase tracking-tighter filter drop-shadow-[0_0_20px_rgba(230,81,0,0.5)]">
+          <h2 className="text-4xl md:text-8xl font-black text-white uppercase tracking-tighter filter drop-shadow-[0_0_20px_rgba(0,229,255,0.5)]">
             Event Timeline
           </h2>
           <p className="text-primary font-mono text-sm mt-4 tracking-[0.3em] uppercase opacity-60">The Realignment Sequence</p>
@@ -128,32 +123,32 @@ const EventTimelineSection = () => {
 
                 {/* Content Block */}
                 <div className={`w-full md:w-[45%] ml-12 md:ml-0 group`}>
-                   <div className="relative bg-[#0a0a0a] border border-white/5 p-8 rounded-2xl hover:border-primary/40 transition-all duration-500 hover:shadow-[0_0_40px_rgba(230,81,0,0.05)] overflow-hidden">
+                   <div className="relative bg-[#0B0F1A] border border-white/5 p-8 rounded-2xl hover:border-primary/40 transition-all duration-500 hover:shadow-[0_0_40px_rgba(0,229,255,0.1)] group-[.is-active]:border-primary/40 group-[.is-active]:shadow-[0_0_40px_rgba(0,229,255,0.1)] overflow-hidden">
                       {/* Decorative Background Number */}
-                      <div className="absolute -right-4 -bottom-8 text-[10rem] font-black text-primary/5 group-hover:text-primary/10 transition-colors duration-500 select-none pointer-events-none">
+                      <div className="absolute -right-4 -bottom-8 text-[10rem] font-black text-primary/5 group-hover:text-primary/10 group-[.is-active]:text-primary/10 transition-colors duration-500 select-none pointer-events-none">
                         {i + 1}
                       </div>
-
+ 
                       {/* Scanning Line Overlay */}
-                      <div className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-10 transition-opacity rounded-2xl overflow-hidden">
+                      <div className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-10 group-[.is-active]:opacity-10 transition-opacity rounded-2xl overflow-hidden">
                         <div className="w-full h-[2px] bg-primary absolute top-0 animate-[scan_4s_linear_infinite]" />
                       </div>
-
+ 
                       <div className="flex flex-col gap-4 relative z-10">
                         <div className="flex justify-between items-center">
                           <span className="text-primary font-mono text-xs tracking-widest uppercase">{event.day}</span>
                           <span className="text-white font-mono text-[10px]">{event.date}</span>
                         </div>
-                        <h3 className="text-2xl md:text-3xl font-black text-white uppercase group-hover:text-primary transition-colors duration-300">
+                        <h3 className="text-2xl md:text-3xl font-black text-white uppercase group-hover:text-primary group-[.is-active]:text-primary transition-colors duration-300">
                           {event.title}
                         </h3>
                         <p className="text-white text-sm md:text-base leading-relaxed font-light">
                           {event.desc}
                         </p>
                       </div>
-
+ 
                       {/* Accent Corner */}
-                      <div className={`absolute top-0 ${isEven ? 'right-0' : 'left-0'} w-12 h-12 border-t-2 border-${isEven ? 'r' : 'l'}-2 border-primary/20 group-hover:border-primary/60 transition-colors duration-500 rounded-${isEven ? 'tr' : 'tl'}-2xl`} />
+                      <div className={`absolute top-0 ${isEven ? 'right-0' : 'left-0'} w-12 h-12 border-t-2 border-${isEven ? 'r' : 'l'}-2 border-primary/20 group-hover:border-primary/60 group-[.is-active]:border-primary/60 transition-colors duration-500 rounded-${isEven ? 'tr' : 'tl'}-2xl`} />
                    </div>
                 </div>
 

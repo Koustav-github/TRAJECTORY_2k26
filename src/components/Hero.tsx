@@ -35,6 +35,7 @@ const Hero = () => {
         <Image
           src="/bg-new.webp"
           alt="Dystopian Hero Background"
+
           fill
           className="object-cover opacity-60"
           priority
@@ -52,7 +53,7 @@ const Hero = () => {
       >
         <motion.h1
           variants={itemVariants}
-          className="text-4xl md:text-8xl font-black tracking-tighter text-primary drop-shadow-[0_0_15px_rgba(230,81,0,0.5)] mb-4 glitch"
+          className="text-4xl md:text-8xl font-black tracking-tighter text-primary drop-shadow-[0_0_15px_rgba(0,229,255,0.5)] mb-4 glitch"
           data-text="TRAJECTORY"
         >
           TRAJECTORY <span className="text-accent">2K26</span>
@@ -71,14 +72,14 @@ const Hero = () => {
           className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center"
         >
           <Link
-            href="#explore"
+            href="/#explore"
             className="w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 text-lg md:text-xl font-bold text-vanta bg-primary rounded-none hover:bg-secondary hover:text-accent transition-all duration-300 shadow-[0_0_20px_var(--color-primary)] hover:shadow-[0_0_30px_var(--color-secondary)] uppercase tracking-wider clip-path-polygon"
           >
             Explore Events
           </Link>
           <Link
             href="/login"
-            className="w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 text-lg md:text-xl font-bold text-primary border-2 border-primary bg-transparent rounded-none hover:bg-primary hover:text-vanta transition-all duration-300 uppercase tracking-wider"
+            className="w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 text-lg md:text-xl font-bold text-primary border-2 border-primary bg-transparent rounded-none hover:bg-primary hover:text-vanta transition-all duration-300 shadow-[0_0_10px_var(--color-primary)/20] hover:shadow-[0_0_20px_var(--color-primary)] uppercase tracking-wider"
           >
             Join the Resistance
           </Link>

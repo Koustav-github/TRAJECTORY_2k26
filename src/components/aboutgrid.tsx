@@ -1,60 +1,61 @@
 "use client";
 
 import {
-  BellIcon,
-  CalendarIcon,
-  FileTextIcon,
-  GlobeIcon,
-  NutIcon,
+  ShieldCheck,
+  Zap,
+  Users,
+  Trophy,
+  Cpu,
+  Workflow,
 } from "lucide-react";
 import { Card, Grid } from "@/components/grid_setup";
 
 function About() {
   const features = [
     {
-      Icon: FileTextIcon,
-      name: "About Trajectory",
-      description: `Welcome to Trajectory 2025, the premier event for mechanical engineering enthusiasts and professionals! This event is designed to bring together the brightest minds in the field to showcase innovations, share knowledge, and inspire the next generation of engineers.\nTrajectory 2025 will feature a variety of activities including hands-on workshops, live demonstrations, keynote speeches by industry leaders, and exciting competitions. Whether you're a seasoned engineer or a curious student, there's something for everyone.Trajectory 2025 will feature a variety of activities including hands-on workshops, live demonstrations, keynote speeches by industry leaders, and exciting competitions. Whether you're a seasoned engineer or a curious student, there's something for everyone.Join us in exploring the latest advancements in sustainable engineering, robotics, and manufacturing. \nTogether, let's shape the future of mechanical engineering.Join us in exploring the latest advancements in sustainable engineering, robotics, and manufacturing. Together, let's shape the future of mechanical engineering.`,
+      Icon: Cpu,
+      name: "The Vision",
+      description: "Trajectory 2k26 is a catalyst for industrial revolution, redefining engineering through sustainable innovation and digital intelligence.",
       href: "/",
-      background: <img className="absolute -right-20 -top-20 opacity-60" />,
-      className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
+      background: <div className="absolute inset-0 bg-linear-to-br from-primary/5 to-transparent pointer-events-none" />,
+      className: "lg:col-span-2 lg:row-span-1",
     },
     {
-      Icon: NutIcon,
-      name: "Highlights of Trajectory 2k26",
-      description: "Search through all your files in one place.",
+      Icon: ShieldCheck,
+      name: "Legacy of Excellence",
+      description: "Pushing the envelope in design, thermal dynamics, and materials science.",
       href: "/",
-      background: <img className="absolute -right-20 -top-20 opacity-60" />,
-      className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
+      background: <div className="absolute inset-0 bg-linear-to-bl from-secondary/5 to-transparent pointer-events-none" />,
+      className: "lg:col-span-1 lg:row-span-1",
     },
     {
-      Icon: GlobeIcon,
-      name: "Multilingual",
-      description: "Supports 100+ languages and counting.",
+      Icon: Users,
+      name: "Engineering Community",
+      description: "A network of 500+ innovators shaping the future together.",
       href: "/",
-      background: <img className="absolute -right-20 -top-20 opacity-60" />,
-      className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
+      background: <div className="absolute inset-0 bg-linear-to-tr from-accent/5 to-transparent pointer-events-none" />,
+      className: "lg:col-span-1 lg:row-span-1",
     },
     {
-      Icon: CalendarIcon,
-      name: "Calendar",
-      description: "Use the calendar to filter your files by date.",
+      Icon: Trophy,
+      name: "Elite Competitions",
+      description: "Witness the peak of mechanical prowess in CAD and robotics.",
       href: "/",
-      background: <img className="absolute -right-20 -top-20 opacity-60" />,
-      className: "lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2",
+      background: <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-transparent pointer-events-none" />,
+      className: "lg:col-span-1 lg:row-span-1",
     },
     {
-      Icon: BellIcon,
-      name: "Notifications",
+      Icon: Workflow,
+      name: "Hands-on Workshops",
       description:
-        "Get notified when someone shares a file or mentions you in a comment.",
+        "Master aerospace, automotive, and automation tools with industry experts.",
       href: "/",
-      background: <img className="absolute -right-20 -top-20 opacity-60" />,
-      className: "lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-4",
+      background: <div className="absolute inset-0 bg-linear-to-tl from-secondary/10 to-transparent pointer-events-none" />,
+      className: "lg:col-span-1 lg:row-span-1",
     },
   ];
   return (
-    <Grid className="lg:grid-rows-3">
+    <Grid className="pb-20">
       {features.map((feature) => (
         <Card key={feature.name} {...feature} />
       ))}
