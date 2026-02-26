@@ -23,19 +23,22 @@ const SmoothScroll = ({ children }: SmoothScrollProps) => {
     });
 
     // Synchronize Lenis with GSAP ScrollTrigger
-    lenis.on("scroll", ScrollTrigger.update);
+    const onScroll = () => {
+      ScrollTrigger.update();
+    };
+    lenis.on("scroll", onScroll);
 
-    gsap.ticker.add((time) => {
+    const onRaf = (time: number) => {
       lenis.raf(time * 1000);
-    });
+    };
+    gsap.ticker.add(onRaf);
 
     gsap.ticker.lagSmoothing(0);
 
     return () => {
+      lenis.off("scroll", onScroll);
       lenis.destroy();
-      gsap.ticker.remove((time) => {
-        lenis.raf(time * 1000);
-      });
+      gsap.ticker.remove(onRaf);
     };
   }, []);
 

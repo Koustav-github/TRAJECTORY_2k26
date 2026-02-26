@@ -16,81 +16,73 @@ const Grid = ({
   children: ReactNode;
   className?: string;
 }) => {
-
   const containerRef = useRef<HTMLDivElement>(null);
 
   const handleEnter = (card: HTMLDivElement) => {
     if (!containerRef.current) return;
-
-    const siblings = Array.from(containerRef.current!.children);
-
+    const siblings = Array.from(containerRef.current.children);
+    
     gsap.to(siblings, {
-      filter: "blur(3px)",
-      scale: 0.95,
+      opacity: 0.4,
+      scale: 0.98,
       duration: 0.3,
       ease: "power2.out"
     });
 
     gsap.to(card, {
-      filter: "blur(0px)",
+      opacity: 1,
       scale: 1.05,
-      duration: 0.3
+      duration: 0.3,
+      ease: "power2.out"
     });
-
   };
-
-
 
   const handleLeave = () => {
     if (!containerRef.current) return;
-
-    const cards = containerRef.current!.children;
-
+    const cards = containerRef.current.children;
+    
     gsap.to(cards, {
-      filter: "blur(0px)",
+      opacity: 1,
       scale: 1,
-      duration: 0.3
+      duration: 0.3,
+      ease: "power2.out"
     });
-
   };
 
   useGSAP(() => {
     if (!containerRef.current) return;
     const cards = Array.from(containerRef.current.children) as HTMLDivElement[];
     
-    cards.forEach((card) => {
-      ScrollTrigger.create({
-        trigger: card,
-        start: "top 60%",
-        end: "bottom 40%",
-        onEnter: () => handleEnter(card),
-        onLeave: () => handleLeave(),
-        onEnterBack: () => handleEnter(card),
-        onLeaveBack: () => handleLeave(),
-      });
+    // Entrance animation - staggered reveal
+    gsap.from(cards, {
+      y: 50,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "top 85%",
+      }
     });
+
   }, { scope: containerRef });
 
   return (
-
     <div
       ref={containerRef}
       className={cn(
-        "grid w-[90vw] auto-rows-[22rem] grid-cols-3 gap-4",
+        "grid w-full max-w-7xl mx-auto auto-rows-min md:auto-rows-[18rem] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6",
         className,
       )}
     >
-
-      {React.Children.map(children, (child:any) =>
+      {React.Children.map(children, (child: any) =>
         React.cloneElement(child as React.ReactElement<any>, {
           onHoverEntry: handleEnter,
           onHoverExit: handleLeave,
-          
         })
       )}
-
     </div>
-
   );
 };
 
