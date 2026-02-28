@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import SmoothScroll from "@/components/SmoothScroll";
 import MouseFlare from "@/components/MouseFlare";
+import { imageConfigDefault } from "next/dist/shared/lib/image-config";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,9 +20,11 @@ export const metadata: Metadata = {
   title: "Trajectory 2k26",
   description: "Mechanical Revolution Fest",
   icons: {
-    icon: "/logo.webp",
+    icon: "logo.webp/",
   },
 };
+
+import EntryGate from "@/components/EntryGate";
 
 export default function RootLayout({
   children,
@@ -33,11 +36,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-[#0B0F1A]`}
       >
-        <SmoothScroll>
-          <MouseFlare />
-          <Navbar />
-          {children}
-        </SmoothScroll>
+        <EntryGate>
+          <SmoothScroll>
+            <MouseFlare />
+            <Navbar />
+            {children}
+          </SmoothScroll>
+        </EntryGate>
       </body>
     </html>
   );
