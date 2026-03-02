@@ -36,49 +36,49 @@ const FeaturedEvents = () => {
 
   const events = [
     { 
-      title: "3D Design Battle", 
-      category: "Simulation",
-      desc: "Test your problem-solving skills with complex simulations and scenarios.",
+      title: "Mystery Event", 
+      category: "Engineering",
+      desc: "Calm the noise. The reveal is near.",
       color: "#00ffff",
       id: "XD-349",
-      image: "/3ddesignbattle.webp"
+      image: "/mysteryevent.webp"
     },
     { 
-      title: "Case Study", 
+      title: "Mystery Event", 
       category: "Engineering",
-      desc: "Dive deep into real-world engineering cases and come up with innovative solutions.",
+      desc: "Calm the noise. The reveal is near.",
       color: "#ff00ff",
       id: "CS-882",
-      image: "/casestudy.webp"
+      image: "/mysteryevent.webp"
     },
     { 
-      title: "General", 
-      category: "Culture & Logic",
-      desc: "Quiz, Debate, Cultural events etc.. Engaging sessions for all minds.",
+      title: "Mystery Event", 
+      category: "Engineering",
+      desc: "Calm the noise. The reveal is near.",
       color: "#ffff00",
       id: "GL-102",
-      image: "/quiz.webp"
+      image: "/mysteryevent.webp"
     },
     { 
-      title: "Fun Activities", 
-      category: "Interactive",
-      desc: "Engage in exciting and interactive activities to unwind and have fun.",
+      title: "Mystery Event", 
+      category: "Engineering",
+      desc: "Calm the noise. The reveal is near.",
       color: "#00ff00",
       id: "FA-556",
-      image: "/funactivities.webp"
+      image: "/mysteryevent.webp"
     },
     { 
-      title: "Hardware Challenge", 
-      category: "Innovation",
-      desc: "Compete in designing innovative hardware solutions to real-world problems.",
+      title: "Mystery Event", 
+      category: "Engineering",
+      desc: "Calm the noise. The reveal is near.",
       color: "#00E5FF",
       id: "HC-221",
-      image: "/image2.webp"
+      image: "/mysteryevent.webp"
     },
     { 
-      title: "Mystery Event?", 
-      category: "Secret",
-      desc: "Event closes with a banger. Prepare for the unexpected. Termination imminent.",
+      title: "Mystery Event", 
+      category: "Engineering",
+      desc: "Calm the noise. The reveal is near.",
       color: "#ffffff",
       id: "MX-000",
       image: "/mysteryevent.webp"
