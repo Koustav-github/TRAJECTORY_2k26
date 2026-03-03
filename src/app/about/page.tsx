@@ -26,17 +26,7 @@ const AbtPage = () => {
       delay: 0.2
     });
 
-    // Background Parallax
-    gsap.to(bgRef.current, {
-      yPercent: 20,
-      ease: "none",
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top top",
-        end: "bottom bottom",
-        scrub: true
-      }
-    });
+    // Background remains fixed for performance (removed parallax)
 
     // Vision Section Reveal
     gsap.fromTo(visionRef.current, 
@@ -123,15 +113,46 @@ const AbtPage = () => {
           </div>
         </section>
 
-        {/* Vision Section */}
-        <section ref={visionRef} className="max-w-4xl mx-auto px-6 py-40 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
-            Pioneering the <span className="text-primary">Future</span> of Engineering
-          </h2>
-          <p className="text-xl text-accent/70 leading-relaxed mb-12">
-            Trajectory is more than just a college fest; it's a testament to the relentless spirit of innovation that defines mechanical engineering. Born from the desire to bridge theory and practice, we bring together the brightest minds to solve the challenges of tomorrow.
-          </p>
-          <div className="h-[2px] w-24 bg-primary mx-auto opacity-50" />
+        {/* Vision Section - Redesigned for Premium Aesthetic */}
+        <section ref={visionRef} className="relative max-w-5xl mx-auto px-6 py-40">
+          <div className="tech-border p-8 md:p-16 rounded-sm overflow-hidden group">
+            {/* Technical Corner Accents */}
+            <div className="tech-corner tech-corner-tl" />
+            <div className="tech-corner tech-corner-tr" />
+            <div className="tech-corner tech-corner-bl" />
+            <div className="tech-corner tech-corner-br" />
+
+            {/* Scanning Line Effect (CSS Driven) */}
+            <div className="absolute inset-0 z-0 pointer-events-none opacity-20 group-hover:opacity-40 transition-opacity duration-700">
+              <div className="w-full h-[1px] bg-primary animate-scan shadow-[0_0_15px_var(--color-primary)]" />
+            </div>
+
+            {/* Static Metadata Labels */}
+            <div className="absolute top-4 left-4 mono-label hidden md:block">
+              SYSTEM_PROTOCOL: <span className="text-white">VISION_SYNC_01</span>
+            </div>
+            <div className="absolute top-4 right-4 mono-label hidden md:block">
+              LAT: 22.5726"N | LONG: 88.3639"E
+            </div>
+            <div className="absolute bottom-4 left-4 mono-label hidden md:block">
+              STATUS: <span className="animate-pulse-soft">ACTIVE_REVOLUTION</span>
+            </div>
+
+            <div className="relative z-10 text-center">
+              <span className="inline-block px-3 py-1 mb-6 text-[10px] font-mono tracking-[0.3em] text-primary border border-primary/30 rounded-full uppercase">
+                The Mission Statement
+              </span>
+              <h2 className="text-4xl md:text-7xl font-black text-white mb-10 tracking-tight leading-none">
+                Pioneering the <span className="text-primary italic">Future</span> <br className="hidden md:block" /> of Engineering
+              </h2>
+              <p className="max-w-2xl mx-auto text-lg md:text-xl text-accent/60 leading-relaxed font-light">
+                Trajectory is more than just a college fest; it's a testament to the relentless spirit of innovation that defines mechanical engineering. Born from the desire to <span className="text-white font-medium italic">bridge theory and practice</span>, we bring together the brightest minds to solve the challenges of tomorrow.
+              </p>
+            </div>
+
+            {/* Bottom Glow Accent */}
+            <div className="absolute -bottom-20 left-1/2 -translate-x-1/2 w-1/2 h-40 bg-primary/10 blur-[100px] pointer-events-none" />
+          </div>
         </section>
 
         {/* The Grid Section */}

@@ -231,6 +231,65 @@ h1, h2, h3, h4, h5, h6 {
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+/* Cyber Technical Accents */
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.05); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-scan {
+  animation: scanline 8s linear infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 4s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.tech-border {
+  position: relative;
+  border: 1px solid rgba(0, 229, 255, 0.15);
+  background: rgba(11, 15, 26, 0.85); /* Increased opacity to compensate for lack of blue */
+}
+
+.tech-corner::before,
+.tech-corner::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: var(--color-primary);
+  border-style: solid;
+  opacity: 0.5;
+}
+
+.tech-corner-tl::before { top: -2px; left: -2px; border-width: 2px 0 0 2px; }
+.tech-corner-tr::before { top: -2px; right: -2px; border-width: 2px 2px 0 0; }
+.tech-corner-bl::before { bottom: -2px; left: -2px; border-width: 0 0 2px 2px; }
+.tech-corner-br::before { bottom: -2px; right: -2px; border-width: 0 2px 2px 0; }
+
+.mono-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+  opacity: 0.4;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
