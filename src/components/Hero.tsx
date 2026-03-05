@@ -114,7 +114,7 @@ const Hero = () => {
           <div className="flex items-center gap-6 px-8 py-4 bg-white/5 border border-white/10 backdrop-blur-sm">
             <div className="text-left">
               <span className="block text-primary font-mono text-[10px] uppercase opacity-60">Registrations</span>
-              <span className="text-white font-black text-2xl">0</span>
+              <span className="text-white font-black text-2xl">250+</span>
             </div>
             <div className="w-px h-10 bg-white/10" />
             <div className="text-left">
