@@ -94,7 +94,7 @@ const EventCard = ({ event }: EventCardProps) => {
       <img
         src={event.image}
         alt="event"
-        className="w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-all duration-700 group-hover:scale-110"
+        className="w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-all duration-700 group-hover:scale-110"
       />
 
       {/* Gradient overlay for readability */}
