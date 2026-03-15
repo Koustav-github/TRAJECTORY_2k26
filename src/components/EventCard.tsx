@@ -97,7 +97,8 @@ const EventCard = ({ event }: EventCardProps) => {
         fill
         objectPosition="center"
         alt="event"
-        className="w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-all duration-700 group-hover:scale-110"
+        quality={40}
+        className="max-w-[1000px] max-h-[600px] object-cover opacity-40 group-hover:opacity-50 transition-all duration-700 group-hover:scale-110"
         />
 
       {/* Gradient overlay for readability */}
