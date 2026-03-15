@@ -3,6 +3,7 @@ import toast from "react-hot-toast";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,60 +37,28 @@ const FeaturedEvents = () => {
 
   const events = [
     { 
-      title: "Mystery Event", 
-      category: "Engineering",
-      desc: "Calm the noise. The reveal is near.",
+      title: "Cricket", 
+      category: "Sports",
+      desc: "Precision, patience and pure power",
       color: "#00ffff",
-      id: "XD-349",
+      id: "CRKT-49",
       image: "/mysteryevent.webp"
     },
     { 
-      title: "Mystery Event", 
-      category: "Engineering",
-      desc: "Calm the noise. The reveal is near.",
+      title: "Football", 
+      category: "Sports",
+      desc: "Speed, strategy and unstoppable passion",
       color: "#ff00ff",
-      id: "CS-882",
-      image: "/mysteryevent.webp"
-    },
-    { 
-      title: "Mystery Event", 
-      category: "Engineering",
-      desc: "Calm the noise. The reveal is near.",
-      color: "#ffff00",
-      id: "GL-102",
-      image: "/mysteryevent.webp"
-    },
-    { 
-      title: "Mystery Event", 
-      category: "Engineering",
-      desc: "Calm the noise. The reveal is near.",
-      color: "#00ff00",
-      id: "FA-556",
-      image: "/mysteryevent.webp"
-    },
-    { 
-      title: "Mystery Event", 
-      category: "Engineering",
-      desc: "Calm the noise. The reveal is near.",
-      color: "#00E5FF",
-      id: "HC-221",
-      image: "/mysteryevent.webp"
-    },
-    { 
-      title: "Mystery Event", 
-      category: "Engineering",
-      desc: "Calm the noise. The reveal is near.",
-      color: "#ffffff",
-      id: "MX-000",
-      image: "/mysteryevent.webp"
+      id: "FTBL-67",
+      image: "/football.webp"
     },
   ];
 
   return (
     <div className="w-full max-w-7xl mx-auto px-4 md:px-6 py-10 md:py-20">
       <div className="text-center mb-16 md:mb-32 featured-heading">
-        <h2 className="text-4xl md:text-9xl font-black text-white uppercase tracking-[0.1em] md:tracking-[0.15em] mb-4 md:mb-6 filter drop-shadow-[0_0_30px_rgba(255,255,255,0.1)]">
-          Core <span className="text-primary italic">Events</span>
+        <h2 className="text-3xl md:text-8xl font-black text-white uppercase tracking-[0.1em] md:tracking-[0.15em] mb-4 md:mb-6 filter drop-shadow-[0_0_30px_rgba(255,255,255,0.1)] ">
+          Intra-college<br/><span className="text-primary italic">Events</span>
         </h2>
         <div className="flex items-center justify-center gap-3 md:gap-6">
           <div className="h-[1px] md:h-[2px] w-12 md:w-24 bg-linear-to-r from-transparent via-primary to-transparent" />
@@ -100,7 +69,7 @@ const FeaturedEvents = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 md:gap-x-12 gap-y-12 md:gap-y-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-12 gap-y-12 md:gap-y-24">
         {events.map((event, index) => (
           <div 
             key={index}
@@ -116,10 +85,11 @@ const FeaturedEvents = () => {
 
             {/* Visual Header / Image */}
             <div className="h-2/5 md:h-1/2 w-full bg-neutral-950 relative border-b border-white/5 overflow-hidden">
-               <img 
+               <Image
+                fill 
                  src={event.image} 
                  alt={event.title}
-                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 group-[.is-active]:opacity-100 group-[.is-active]:scale-110 transition-all duration-1000 grayscale group-hover:grayscale-0 group-[.is-active]:grayscale-0"
+                 className="absolute inset-0 w-full h-full  object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 group-[.is-active]:opacity-100 group-[.is-active]:scale-110 transition-all duration-1000 grayscale group-hover:grayscale-0 group-[.is-active]:grayscale-0"
                />
                
                {/* Technical Scanline Animation */}
