@@ -193,11 +193,13 @@ export default function Event ({params,}:{params: Promise<{slug: string}>;}) {
     <div className="relative row-start-2 col-start-1 rounded-sm bg-vanta shadow-[0_0_25px_rgba(0,255,255,0.15)] border-2 border-cyan-400/30 min-h-[300px] flex items-center justify-center">
       <div ref={imageRef} className="absolute h-[90%] w-[90%]">
         <Image
-          src={event.image}
-          fill
-          alt={event.title}
-          className="rounded-sm "
-          />
+        src={event.image}
+        fill
+        alt={event.title}
+        className="rounded-sm"
+        sizes="(max-width: 768px) 100vw, 50vw"
+        priority={false}
+      />
 
           {/* Top Left Corner */}
     <div

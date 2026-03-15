@@ -8,6 +8,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import Image from "next/image";
 
 export interface EventData {
   slug: string,
@@ -91,11 +92,13 @@ const EventCard = ({ event }: EventCardProps) => {
 
       {/* Grid overlay */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      <img
+      <Image
         src={event.image}
+        fill
+        objectPosition="center"
         alt="event"
         className="w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-all duration-700 group-hover:scale-110"
-      />
+        />
 
       {/* Gradient overlay for readability */}
       <div className="absolute inset-0 bg-gradient-to-tr from-[#0B0F1A] via-[#0B0F1A]/80 to-transparent" />
