@@ -2,6 +2,10 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
 export interface Card{
         id: string,
         title:string,
@@ -11,14 +15,16 @@ export interface Card{
         color: string,
     }
 
+
 interface CardProps{
     event: Card;
 }
 
 const MarqueeCard = ({event}: CardProps) => {
+
   return (
     <motion.div
-      className="group relative h-70 lg:h-90 w-40 lg:w-140 bg-[#0B0F1A] border border-white/5 rounded-none overflow-hidden transition-[border-color,box-shadow] duration-500 hover:border-primary/50 hover:shadow-[0_0_40px_rgba(0,229,255,0.1)]"
+      className="group relative h-70 lg:h-90 w-40 lg:w-140 bg-[#0B0F1A] opacity-100 border border-white/5 rounded-none overflow-hidden transition-[border-color,box-shadow] duration-500 hover:border-primary/50 hover:shadow-[0_0_40px_rgba(0,229,255,0.1)]"
       whileHover={{ scale: 1.02 }}
       transition={{ duration: 0.3 }}
     >
@@ -36,7 +42,8 @@ const MarqueeCard = ({event}: CardProps) => {
     src={`/${event.image}.webp`}
     alt={event.title}
     fill
-    className="object-cover transition-transform duration-700 group-hover:scale-105"
+    quality={40}
+    className="object-cover transition-transform max-h-[400px] max-w-[700px] duration-700 group-hover:scale-105"
   />
     <div className="absolute bottom-3 left-3 w-5 h-5 border-l border-b border-primary/60" />
     <div className="absolute top-3 right-3 w-5 h-5 border-r border-t border-primary/60" />

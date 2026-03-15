@@ -46,10 +46,10 @@ const prev = () => {
       ease: "power3.out"
     });
   });
-}, [active]);
+},[active]);
 
 
-useEffect(() => {
+useGSAP(() => {
   gsap.to(headingRef.current, {
     y: -200,
     opacity: 1,
@@ -62,9 +62,9 @@ useEffect(() => {
     ease: "power2.out",
   });
 
-  gsap.to(containerRef.current, {
-    y:0,
-    opacity:1,
+  gsap.from(containerRef.current, {
+    y:200,
+    opacity:0,
     duration:2,
     scrollTrigger:{
       trigger: containerRef.current,
@@ -73,7 +73,7 @@ useEffect(() => {
     ease: "power3.out",
   });
 
-}, [pathname]);
+},[pathname]);
 
   const events: Card[] = [
   {
@@ -239,7 +239,7 @@ useEffect(() => {
       {/* Left Arrow */}
       <button
         onClick={prev}
-        className="hover:cursor-pointer h-12 w-12 text-sky-400 rounded-full bg-sky-900/40 backdrop-blur-md border border-sky-400/30 flex items-center justify-center transition-all duration-300 hover:bg-sky-400 hover:text-white hover:scale-110 hover:shadow-[0_0_25px_rgba(14,165,233,0.7)] active:scale-95 z-50"
+        className="hover:cursor-pointer h-12 w-12 text-sky-400 rounded-full bg-sky-900/40 backdrop-blur-md border border-sky-400/30 flex items-center justify-center transition-all duration-300 hover:bg-sky-400 hover:text-white hover:scale-110 hover:shadow-[0_0_25px_rgba(14,165,233,0.7)] active:scale-95 z-50 ml-4"
       >
         <ChevronLeftIcon className="h-6 w-6" />
       </button>
@@ -247,7 +247,7 @@ useEffect(() => {
       {/* Card Stage */}
       <div
         ref={containerRef}
-        className="opacity-0 translate-y-20 relative w-[70rem] h-ful flex items-center justify-center perspective-distant mt-30"
+        className="opacity-100 relative w-[70rem] h-full flex items-center justify-center perspective-distant mt-30"
       >
         {events.map((event: any, index: number) => (
           <div key={index} className="card absolute">
@@ -259,7 +259,7 @@ useEffect(() => {
       {/* Right Arrow */}
       <button
         onClick={next}
-        className="hover:cursor-pointer h-12 w-12 text-sky-400 rounded-full bg-sky-900/40 backdrop-blur-md border border-sky-400/30 flex items-center justify-center transition-all duration-300 hover:bg-sky-400 hover:text-white hover:scale-110 hover:shadow-[0_0_25px_rgba(14,165,233,0.7)] active:scale-95 z-50"
+        className="hover:cursor-pointer h-12 w-12 text-sky-400 rounded-full bg-sky-900/40 backdrop-blur-md border border-sky-400/30 flex items-center justify-center transition-all duration-300 hover:bg-sky-400 hover:text-white hover:scale-110 hover:shadow-[0_0_25px_rgba(14,165,233,0.7)] active:scale-95 z-50 mr-4"
       >
         <ChevronRightIcon className="h-6 w-6" />
       </button>
