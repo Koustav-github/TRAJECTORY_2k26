@@ -1,9 +1,15 @@
 "use client";
 
 import { motion } from "motion/react";
-import EventCard from "@/components/EventCard";
+import dynamic from "next/dynamic";
 import Footer from "@/components/Footer";
 import { events } from "@/app/data/events";
+
+const EventCard = dynamic(() => import("@/components/EventCard"), {
+  ssr: false,
+  loading: () => <div className="h-[420px] bg-[#0B0F1A]/60 animate-pulse" />,
+});
+
 
 
 const containerVariants = {
