@@ -11,8 +11,8 @@ const FeaturedEvents = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const handleClick = () => {
-    toast("🛠️ Arena opens soon....Stay tuned!! 🛠️", {
-      duration: 3000,
+    toast("🛠️ These are intra-college events and registrations are done differently 🛠️", {
+      duration: 3500,
       style: {
         borderRadius: "12px",
         background: "#0f172a",
@@ -42,7 +42,7 @@ const FeaturedEvents = () => {
       desc: "Precision, patience and pure power",
       color: "#00ffff",
       id: "CRKT-49",
-      image: "/mysteryevent.webp"
+      image: "/cricket.webp"
     },
     { 
       title: "Football", 
