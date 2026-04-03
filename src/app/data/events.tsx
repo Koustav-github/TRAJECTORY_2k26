@@ -62,7 +62,7 @@ not be entertained.</li>
         <li>Any form of plagiarism, cheating, or unethical behavior will result in immediate disqualification.</li>
         <li>The decision of the Event Coordinator will be final and no arguments will be entertained.</li>
         </>),
-        description: "Welcome to CaseCom 2026 - the ultimate data analytics showdown fused with a high-intensity mechanical case study at Trajectory 2026, where raw data transforms into breakthrough decisions.This isn’t just a competition - it’s a proving ground for analytical minds ready to tackle real-world mechanical challenges. Step into the arena where complex datasets conceal critical insights, and only the sharpest thinkers can decode patterns, engineer solutions, and craft compelling, innovation-driven narratives. Are you a Python powerhouse? An R virtuoso? A visualization visionary? CaseCom is your stage to demonstrate technical mastery, strategic thinking, and data storytelling excellence. Push boundaries, challenge assumptions, and turn numbers into impact. Sharpen your analysis. Elevate your problem-solving. Compete with the best.",
+        description: "Calm the wind....reveal is near",
         team_structure:(<>
         <li>Each team must consist of 2 to 3 members.</li>
         <li>One member must be designated as the team leader for communication purposes.</li>
