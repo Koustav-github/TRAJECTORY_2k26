@@ -45,14 +45,13 @@ export const events = [
 
     },
     {
-        slug: "casecom",
+        slug: "treasurehunt",
         id: 2,
         deadline:"15th April, 2026",
-        title: "CASECOM",
-        image: "/casecom.webp",
-        pricepool:"₹5,000",
-        teamSize: "2-3 Members",
-        date: "16th April, 2026",
+        title: "TREASURE HUNT",
+        image: "/mysteryevent.webp",
+        pricepool:"TBD",
+        date: "TDB",
         guidelines:(<>
         <li>Only registrations submitted within the specified registration period will be accepted. Late or incomplete registrations will
 not be entertained.</li>

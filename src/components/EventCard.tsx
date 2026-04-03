@@ -36,7 +36,7 @@ const EventCard = ({ event }: EventCardProps) => {
   const router = useRouter();
 
   const handleClick = (e:HTMLDivElement) => {
-    if((e.id === "casecom" || e.id === "modelmatrix")){
+    if((e.id === "treasurehunt")){
       toast("🚧 Registration opens soon!", {
         duration: 3000,
         style: {
