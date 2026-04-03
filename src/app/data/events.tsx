@@ -52,6 +52,7 @@ export const events = [
         image: "/mysteryevent.webp",
         pricepool:"TBD",
         date: "TDB",
+        teamSize: "TBD",
         guidelines:(<>
         <li>Only registrations submitted within the specified registration period will be accepted. Late or incomplete registrations will
 not be entertained.</li>
@@ -208,9 +209,10 @@ coordinator’s decision will be final.</li>
             <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Shayan Charan :</span> Contact: +91 9163123389</li>
             <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Nirmalya De :</span> Contact: +91 8670060339</li>
             <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Sharanya Pramanik :</span> Contact: +91 87778 17970</li>
+            <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Soumajit Biswas :</span> Contact: +91 83890 06855</li>
         </>),
          gdrive:("https://drive.google.com/file/d/1R3qlnePQC4z_qxr7Xqu35uNgE_rx1JV0/view?usp=sharing"),
-        register:("https://unstop.com/competitions/model-matrix-trajectory-2026-jadavpur-university-kolkata-1653458?utm_campaign=site-emails&utm_medium=d2c-automated&utm_source=opportunity-approved"),
+        register:("https://unstop.com/competitions/model-matrix-trajectory-2026-jadavpur-university-kolkata-1653458"),
 
     },
     {

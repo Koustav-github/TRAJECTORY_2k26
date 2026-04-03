@@ -219,13 +219,13 @@ export default function Event ({params,}:{params: Promise<{slug: string}>;}) {
     {/* Left Lower */}
     <div className="row-start-3 col-start-1 rounded-sm border-2 bg-vanta border-emerald-400/30 h-[180px] shadow-[0_0_25px_rgba(0,255,0,0.5)]">
       <div className="relative flex flex-col items-center justify-evenly h-full w-full">
-      <Link href={event.register} className="h-15 w-[90%] bg-vanta hover:cursor-pointer border-2 capitalize font-bold text-cyan-500 rounded-sm hover:text-emerald-400/80 transition-all duration-400 ease-in-out hover:scale-102 hover:-translate-y-0.5 hover:shadow-[0px_0px_10px_rgba(0,255,0,0.2)] active:scale-100 flex items-center justify-center" style={{
+      <Link target="_blank" href={event.register} className="h-15 w-[90%] bg-vanta hover:cursor-pointer border-2 capitalize font-bold text-cyan-500 rounded-sm hover:text-emerald-400/80 transition-all duration-400 ease-in-out hover:scale-102 hover:-translate-y-0.5 hover:shadow-[0px_0px_10px_rgba(0,255,0,0.2)] active:scale-100 flex items-center justify-center" style={{
     background: "#0f172a",
     border: "2px solid rgba(56,189,248,0.3)",
   }}>
     Register Now !!! </Link>
 
-      <Link href={event.gdrive} className="h-15 w-[90%] bg-vanta hover:cursor-pointer border-2 capitalize font-bold text-cyan-500 rounded-sm transition-all duration-400 ease-in-out hover:scale-102 hover:text-emerald-300/80 hover:shadow-[0px_0px_10px_rgba(0,255,0,0.2)] hover:-translate-y-0.5 active:scale-100 flex items-center justify-center" style={{
+      <Link target="_blank" href={event.gdrive} className="h-15 w-[90%] bg-vanta hover:cursor-pointer border-2 capitalize font-bold text-cyan-500 rounded-sm transition-all duration-400 ease-in-out hover:scale-102 hover:text-emerald-300/80 hover:shadow-[0px_0px_10px_rgba(0,255,0,0.2)] hover:-translate-y-0.5 active:scale-100 flex items-center justify-center" style={{
     background: "#0f172a",
     border: "2px solid rgba(56,189,248,0.3)",
   }}>Get the Event Details</Link>
