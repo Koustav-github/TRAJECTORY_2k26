@@ -895,7 +895,7 @@ export const events = [
     team_structure: (
       <>
         <li>Open to all students.</li>
-        <li>Team size : 2-3 members</li>
+        <li>Team size : 3-4 members</li>
         <li>Each team can submit only one entry.</li>
         <li>Multiple entries will lead to disqualification.</li>
       </>
