@@ -890,7 +890,8 @@ export const events = [
         </li>
       </>
     ),
-    pricepool: "₹1,550",
+    pricepool:
+      "Exciting Goodies Worth Rs. 1.5K, PPI Opportunities for Internship at Linde",
     teamSize: "3 - 4 Members",
     team_structure: (
       <>
