@@ -861,7 +861,7 @@ export const events = [
       "https://unstop.com/p/e-football-pes-2026-trajectory-2026-jadavpur-university-kolkata-1659127",
   },
   {
-    slug: "LindeInnovationChallenge",
+    slug: "lindeInnovationChallenge",
     id: 12,
     deadline: "12th April, 2026",
     title: "Linde Innovation Challenge",
@@ -933,5 +933,62 @@ export const events = [
     gdrive: "NotFound",
     register:
       "https://unstop.com/competitions/linde-innovation-challenge-2026-jadavpur-university-kolkata-1669287?utm_medium=Share&utm_source=competitions&utm_campaign=Logged_out_user",
+  },
+  {
+    slug: "ascent",
+    id: 12,
+    deadline: "12th April, 2026 , 10:00 am",
+    title: "Ascent 2026 | Innovation Expo",
+    image: "/ascent.webp",
+    date: "16th to 18th April 2026",
+    description:
+      "A cross-domain innovation fair under *Trajectory 2026* at Jadavpur University where students, startups, and clubs showcase prototypes, ideas, and products through interactive exhibitions and live demonstrations.",
+    guidelines: (
+      <>
+        <li>
+          The Mechanical Engineering Department, Jadavpur University, presents
+          Ascent 2026. Innovation Fair and Exhibition as part of Trajectory
+          2026.
+        </li>
+        <li>
+          Participants will showcase their innovations, prototypes, and ideas
+          across diverse domains including engineering, software,
+          sustainability, and business.
+        </li>
+        <li>
+          Shortlisted teams will be allotted exhibition space to demonstrate
+          their projects and interact with visitors, peers, and judges.
+        </li>
+        <li>
+          Note: Detailed shortlisting criteria, exhibition guidelines, and setup
+          requirements will be shared with all registered participants.
+        </li>
+      </>
+    ),
+    pricepool: "NA",
+    teamSize: "1 - 4 Members",
+    team_structure: (
+      <>
+        <li>Open to all students.</li>
+        <li>Team size : 1-4 members</li>
+        <li>Each team can submit only one entry.</li>
+        <li>Multiple entries will lead to disqualification.</li>
+      </>
+    ),
+    event_coordinators: (
+      <>
+        <li className="font-bold text-cyan-500/80">
+          <span className="font-semibold text-cyan-300/80">Email:</span>{" "}
+          jume.trajectory@gmail.com
+        </li>
+        <li className="font-bold text-cyan-500/80">
+          <span className="font-semibold text-cyan-300/80">Rishi Sanyal :</span>{" "}
+          Contact: +91 8240729806
+        </li>
+      </>
+    ),
+    gdrive: "NotFound",
+    register:
+      "https://unstop.com/competitions/innovation-fair-and-exhibition-trajectory-2026-jadavpur-university-kolkata-1673325?utm_medium=Share&utm_source=competitions&utm_campaign=Logged_out_user",
   },
 ];
