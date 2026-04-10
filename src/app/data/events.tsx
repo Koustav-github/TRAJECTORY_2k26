@@ -8,7 +8,7 @@ export const events = [
     title: "HYDROBLASTERS",
     date: "15th April 2026",
     image: "/hydroblasters.webp",
-    pricepool: "₹5,000",
+    pricepool: "Cash Prize and Goodies Worth Rs 5,000",
     teamSize: "2-3 members from same institute",
     guidelines: (
       <>
@@ -186,7 +186,7 @@ export const events = [
     title: "EGGSCAGE",
     image: "/eggscage.webp",
     date: "16th April, 2026",
-    pricepool: "₹5,000",
+    pricepool: " Cash Prize and Goodies Worth Rs 5,000",
     teamSize: "2-4 Members",
     guidelines: (
       <>
@@ -295,7 +295,7 @@ export const events = [
         </li>
       </>
     ),
-    pricepool: "₹12,000",
+    pricepool: " Cash Prize and Goodies Worth Rs 12,000",
     teamSize: "3-4 Members",
     team_structure: (
       <>
@@ -372,7 +372,7 @@ export const events = [
         </li>
       </>
     ),
-    pricepool: "₹15,000",
+    pricepool: "Cash Prize and Goodies Worth Rs 15,000",
     teamSize: "3-5 Members",
     team_structure: (
       <>
@@ -458,7 +458,7 @@ export const events = [
         </li>
       </>
     ),
-    pricepool: "₹3,000",
+    pricepool: "Cash Prize and Goodies Worth Rs 3,000",
     teamSize: "Individual Participation (Solo)",
     team_structure: (
       <>
@@ -534,7 +534,7 @@ export const events = [
         </li>
       </>
     ),
-    pricepool: "₹5,000",
+    pricepool: "Cash Prize and Goodies Worth Rs 5,000",
     teamSize: "Individual Participation (Solo)",
     team_structure: (
       <>
@@ -616,7 +616,7 @@ export const events = [
         </li>
       </>
     ),
-    pricepool: "₹5,000",
+    pricepool: "Cash Prize and Goodies Worth Rs 5,000",
     teamSize: "2 Members",
     team_structure: (
       <>
@@ -696,7 +696,7 @@ export const events = [
         </li>
       </>
     ),
-    pricepool: "₹10,000",
+    pricepool: "Cash Prize and Goodies Worth Rs 10,000",
     teamSize: "Solo/2-4 members",
     team_structure: (
       <>
@@ -764,7 +764,7 @@ export const events = [
         </li>
       </>
     ),
-    pricepool: "₹3,000",
+    pricepool: "Cash Prize and Goodies Worth Rs 3,000",
     teamSize: "2-3 Members",
     team_structure: (
       <>
