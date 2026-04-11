@@ -48,37 +48,31 @@ export const events = [
         slug: "treasurehunt",
         id: 2,
         deadline:"15th April, 2026",
-        title: "TREASURE HUNT",
-        image: "/mysteryevent.webp",
-        pricepool:"TBD",
-        date: "TDB",
-        teamSize: "TBD",
+        title: "Treasure Hunt",
+        image: "/treasurehunt.webp",
+        pricepool:"₹5,000",
+        date: "17th April, 2026",
+        teamSize: "1-3 Members",
         guidelines:(<>
-        <li>Only registrations submitted within the specified registration period will be accepted. Late or incomplete registrations will
-not be entertained.</li>
-        <li>Teams must strictly adhere to competition guidelines and event constraints outlined in this document.</li>
-        <li>Any deviation or violation of the rules will result in immediate disqualification.</li>
+        <li>Participants will solve riddles, find clues and discover the ultimate treasure to win.</li>
+        <li>Strict Adherence: Teams must strictly adhere to competition guidelines and event constraints outlined in this document. Any deviation will result in immediate disqualification.</li>
         <li>Participants are expected to maintain professional conduct throughout the competition.</li>
-        <li>Any form of plagiarism, cheating, or unethical behavior will result in immediate disqualification.</li>
-        <li>The decision of the Event Coordinator will be final and no arguments will be entertained.</li>
+        <li>Organisers reserve the right to disqualify inappropriate or unsafe exhibits</li>
         </>),
-        description: "Calm the wind....reveal is near",
+        description: "Step into a world of mystery, clues, and adrenaline with Treasure Hunt, where wit meets adventure. Teams will navigate through a series of cleverly designed riddles and challenges, each leading them closer to the final treasure.",
         team_structure:(<>
-        <li>Each team must consist of 2 to 3 members.</li>
-        <li>One member must be designated as the team leader for communication purposes.</li>
-        <li>A participant can join only one team. Multiple registrations will lead to disqualification.</li>
-        <li>Interdisciplinary teams (members from different courses) are permitted.</li>
-        <li>Intercollege teams (members from different institutions) are allowed.</li>
+        <li>Individual and team participation allowed</li>
+        <li>Inter-college teams are allowed</li>
+        <li>Inter-specialization teams are allowed.</li>
         </>),
         event_coordinators:(<>
             <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Email:</span> jume.trajectory@gmail.com</li>
-            <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Satanik Auddy :</span> Contact: +91 9038514040</li>
-            <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Dyutimoy Paul :</span> Contact: +91 8017470205</li>
             <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Neelavra Das :</span> Contact: +91 8100027187</li>
-            <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Prajit Mondal :</span> Contact: +91 8777676252</li>
+            <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Satanik Auddy :</span> Contact: +91 9038514040</li>
+            <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Sayantan Ghosh :</span> Contact: +91 9832283600</li>
             </>),
-        gdrive:("https://drive.google.com/file/d/15JfD5tc2qOMCfRxlmwejFiJSsscptmHi/view?usp=sharing"),
-        register:("https://unstop.com/competitions/casecom-trajectory-2026-jadavpur-university-kolkata-1653464?utm_medium=Share&utm_source=neeladas95594&utm_campaign=Competitions"),
+        gdrive:(`${NotFound}`),
+        register:("https://unstop.com/p/treasure-hunt-trajectory-2026-jadavpur-university-kolkata-1673975"),
 
     },
     {
