@@ -1,125 +1,97 @@
 import NotFound from "../not-found";
 
 export const events = [
-  {
-    slug: "hydroblasters",
-    id: 1,
-    deadline: "15th April, 2026",
-    title: "HYDROBLASTERS",
-    date: "15th April 2026",
-    image: "/hydroblasters.webp",
-    pricepool: "Cash Prize and Goodies Worth Rs 5,000",
-    teamSize: "2-3 members from same institute",
-    guidelines: (
-      <>
-        <li>
-          Only registrations submitted within the specified registration period
-          will be accepted. Late or incomplete registrations will not be
-          entertained.
-        </li>
-        <li>
-          Teams must strictly adhere to competition guidelines and event
-          constraints outlined in this document.
-        </li>
-        <li>
-          {" "}
-          Any deviation or violation of the rules will result in immediate
-          disqualification.
-        </li>
-        <li>
-          {" "}
-          Participants are expected to maintain professional conduct throughout
-          the competition.
-        </li>
-        <li>
-          Any form of plagiarism, cheating, or unethical behavior will result in
-          immediate disqualification.
-        </li>
-        <li>
-          The decision of the Event Coordinator will be final and no arguments
-          will be entertained.
-        </li>
-      </>
-    ),
-    team_structure: (
-      <>
-        <li> 2-3 members Team members should be from the same institution.</li>
-        <li>
-          A participant can join only one team. Multiple registrations will lead
-          to disqualification.
-        </li>
-      </>
-    ),
-    description:
-      "Hydroblasters paves the way for an exciting journey to design andconstruct a hig perfromance water rocket, aimed at achieving the maximum range and prescision landing. This event will focus on creating a  stremalimed body to minimize air resitance, featuring an optimised nose cone and stable fins for enhanced stability",
-    event_coordinators: (
-      <>
-        <li className="font-bold text-cyan-500/80">
-          <span className="font-semibold text-cyan-300/80">Email:</span>{" "}
-          jume.trajectory@gmail.com
-        </li>
-        <li className="font-bold text-cyan-500/80">
-          <span className="font-semibold text-cyan-300/80">Kaulik Das:</span>{" "}
-          Contact: +91 9830669894
-        </li>
-        <li className="font-bold text-cyan-500/80">
-          <span className="font-semibold text-cyan-300/80">Ritam Hazra :</span>{" "}
-          Contact: +91 9749907545
-        </li>
-        <li className="font-bold text-cyan-500/80">
-          <span className="font-semibold text-cyan-300/80">
-            Priyanshu Kumar:
-          </span>{" "}
-          Contact: +91 6297445609
-        </li>
-        <li className="font-bold text-cyan-500/80">
-          <span className="font-semibold text-cyan-300/80">
-            Priyabrata Majumder:
-          </span>{" "}
-          Contact: +91 9903861370
-        </li>
-      </>
-    ),
-    gdrive:
-      "https://drive.google.com/file/d/17ThkwtID0deaguQpLj16rcD4nBHL8V6p/view",
-    register:
-      "https://unstop.com/competitions/hydroblasters-trajectory-2026-jadavpur-university-kolkata-1653453",
-  },
-  {
-    slug: "eggscage",
-    id: 3,
-    deadline: "15th April, 2026",
-    title: "EGGSCAGE",
-    image: "/eggscage.webp",
-    date: "16th April, 2026",
-    pricepool: " Cash Prize and Goodies Worth Rs 5,000",
-    teamSize: "2-4 Members",
-    guidelines: (
-      <>
-        <li>
-          Registration: Only registrations submitted within the specified period
-          will be accepted. Late or incomplete registrations will not be
-          entertained.
-        </li>
-        <li>
-          Strict Adherence: Teams must strictly adhere to competition guidelines
-          and event constraints outlined in this document. Any deviation will
-          result in immediate disqualification.
-        </li>
-        <li>
-          Professional Conduct: Participants are expected to maintain
-          professional conduct throughout the competition.
-        </li>
-        <li>
-          Integrity: Any form of plagiarism, cheating, sabotage, or unethical
-          behaviour will result in immediate disqualification.
-        </li>
-      </>
-    ),
-    description:
-      "In EggsCage, the challenge is simple yet exhilarating: design a cover that ensures your egg survives the ultimate test of gravity. Let your creativity soar as you craft innovative, egg-ceptional contraptions that not only protect but also dazzle with their ingenuity. Whether you're an engineering enthusiast, an artist at heart,or simply someone eager to embrace the unconventional, EggsCage welcomes you with open arms. So, gather your materials, unleash your inner inventor, and let's see whose egg-protecting design reigns supreme!",
-    team_structure: (
-      <>
+    {
+        slug: "hydroblasters",
+        id: 1,
+        deadline:"15th April, 2026",
+        title: "HYDROBLASTERS",
+        date: "15th April 2026",
+        image: "/hydroblasters.webp",
+        pricepool:"₹5,000",
+        teamSize: "2-3 members from same institute",
+        guidelines:(<><li>Only registrations submitted within the specified registration period
+        will be accepted. Late or incomplete registrations will not be
+        entertained.</li>
+        <li>Teams must strictly adhere to competition guidelines and event
+        constraints outlined in this document.</li>
+        <li> Any deviation or violation of the rules will result in immediate
+        disqualification.</li>
+        <li> Participants are expected to maintain professional conduct
+        throughout the competition.</li>
+        <li>Any form of plagiarism, cheating, or unethical behavior will result in
+        immediate disqualification.</li>
+        <li>The decision of the Event Coordinator will be final and no 
+        arguments will be entertained.</li>
+        </>),
+        team_structure:(<>
+        <li> 2-3 members Team members should be from the same  
+        institution.</li>
+        <li>A participant can join only one team. Multiple registrations will lead
+        to disqualification.</li>
+        </>),
+        description:"Hydroblasters paves the way for an exciting journey to design andconstruct a hig perfromance water rocket, aimed at achieving the maximum range and prescision landing. This event will focus on creating a  stremalimed body to minimize air resitance, featuring an optimised nose cone and stable fins for enhanced stability",
+        event_coordinators:(
+            <>
+            <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Email:</span> jume.trajectory@gmail.com</li>
+            <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Kaulik Das:</span> Contact: +91 9830669894</li>
+            <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Ritam Hazra :</span> Contact: +91 9749907545</li>
+            <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Priyanshu Kumar:</span> Contact: +91 6297445609</li>
+            <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Priyabrata Majumder:</span> Contact: +91 9903861370</li>
+            </>
+        ),
+        gdrive:("https://drive.google.com/file/d/17ThkwtID0deaguQpLj16rcD4nBHL8V6p/view"),
+        register:("https://unstop.com/competitions/hydroblasters-trajectory-2026-jadavpur-university-kolkata-1653453"),
+
+    },
+    {
+        slug: "treasurehunt",
+        id: 2,
+        deadline:"15th April, 2026",
+        title: "Treasure Hunt",
+        image: "/treasurehunt.webp",
+        pricepool:"₹5,000",
+        date: "17th April, 2026",
+        teamSize: "1-3 Members",
+        guidelines:(<>
+        <li>Participants will solve riddles, find clues and discover the ultimate treasure to win.</li>
+        <li>Strict Adherence: Teams must strictly adhere to competition guidelines and event constraints outlined in this document. Any deviation will result in immediate disqualification.</li>
+        <li>Participants are expected to maintain professional conduct throughout the competition.</li>
+        <li>Organisers reserve the right to disqualify inappropriate or unsafe exhibits</li>
+        </>),
+        description: "Step into a world of mystery, clues, and adrenaline with Treasure Hunt, where wit meets adventure. Teams will navigate through a series of cleverly designed riddles and challenges, each leading them closer to the final treasure.",
+        team_structure:(<>
+        <li>Individual and team participation allowed</li>
+        <li>Inter-college teams are allowed</li>
+        <li>Inter-specialization teams are allowed.</li>
+        </>),
+        event_coordinators:(<>
+            <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Email:</span> jume.trajectory@gmail.com</li>
+            <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Neelavra Das :</span> Contact: +91 8100027187</li>
+            <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Satanik Auddy :</span> Contact: +91 9038514040</li>
+            <li className="font-bold text-cyan-500/80"><span className="font-semibold text-cyan-300/80">Sayantan Ghosh :</span> Contact: +91 9832283600</li>
+            </>),
+        gdrive:(`${NotFound}`),
+        register:("https://unstop.com/p/treasure-hunt-trajectory-2026-jadavpur-university-kolkata-1673975"),
+
+    },
+    {
+        slug: "eggscage",
+        id: 3,
+        deadline:"15th April, 2026",
+        title: "EGGSCAGE",
+        image: "/eggscage.webp",
+        date: "16th April, 2026",
+        pricepool:"₹5,000",
+        teamSize: "2-4 Members",
+        guidelines:(<>
+        <li>Registration: Only registrations submitted within the specified period will be accepted. Late or incomplete registrations will not be entertained.</li>
+        <li>Strict Adherence: Teams must strictly adhere to competition guidelines and event constraints outlined in this document. Any deviation will result in immediate disqualification.</li>
+        <li>Professional Conduct: Participants are expected to maintain professional conduct throughout the competition.</li>
+        <li>Integrity: Any form of plagiarism, cheating, sabotage, or unethical behaviour will result in immediate disqualification.</li>
+        </>),
+        description: "In EggsCage, the challenge is simple yet exhilarating: design a cover that ensures your egg survives the ultimate test of gravity. Let your creativity soar as you craft innovative, egg-ceptional contraptions that not only protect but also dazzle with their ingenuity. Whether you're an engineering enthusiast, an artist at heart,or simply someone eager to embrace the unconventional, EggsCage welcomes you with open arms. So, gather your materials, unleash your inner inventor, and let's see whose egg-protecting design reigns supreme!",
+        team_structure:(<>
         <li>Composition: Each team must consist of 2 to 4 members.</li>
         <li>
           Leadership: One member must be designated as the team leader for all
