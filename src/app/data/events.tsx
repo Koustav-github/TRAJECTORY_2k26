@@ -4,9 +4,9 @@ export const events = [
     {
         slug: "hydroblasters",
         id: 1,
-        deadline:"15th April, 2026",
+        deadline:"16th April, 2026",
         title: "HYDROBLASTERS",
-        date: "15th April 2026",
+        date: "16th April 2026",
         image: "/hydroblasters.webp",
         pricepool:"₹5,000",
         teamSize: "2-3 members from same institute",
@@ -741,7 +741,7 @@ export const events = [
   {
     slug: "lindeInnovationChallenge",
     id: 12,
-    deadline: "12th April, 2026",
+    deadline: "14th April, 2026 8 A.M.",
     title: "Linde Innovation Challenge",
     image: "/lindeinnovation.webp",
     date: "Prelims, 14th - 15th April, 2026 ;  Finals, 16th April, 2026",
@@ -815,7 +815,7 @@ export const events = [
   },
   {
     slug: "ascent",
-    id: 12,
+    id: 13,
     deadline: "12th April, 2026 , 10:00 am",
     title: "Ascent 2026 | Innovation Expo",
     image: "/ascent.webp",
