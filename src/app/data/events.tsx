@@ -47,7 +47,7 @@ export const events = [
     {
         slug: "treasurehunt",
         id: 2,
-        deadline:"15th April, 2026",
+        deadline:"16th April, 2026",
         title: "Treasure Hunt",
         image: "/treasurehunt.webp",
         pricepool:"₹5,000",
@@ -78,7 +78,7 @@ export const events = [
     {
         slug: "eggscage",
         id: 3,
-        deadline:"15th April, 2026",
+        deadline:"16th April, 2026",
         title: "EGGSCAGE",
         image: "/eggscage.webp",
         date: "16th April, 2026",
@@ -145,7 +145,7 @@ export const events = [
   {
     slug: "mazecraft",
     id: 4,
-    deadline: "15th April, 2026",
+    deadline: "16th April, 2026",
     title: "MAZECRAFT",
     image: "/mazecraft.webp",
     date: "TBD",
@@ -222,7 +222,7 @@ export const events = [
   {
     slug: "roboleague",
     id: 5,
-    deadline: "15th April, 2026",
+    deadline: "16th April, 2026",
     title: "ROBOLEAGUE",
     image: "/roboleague.webp",
     date: "TBD",
@@ -295,7 +295,7 @@ export const events = [
   {
     slug: "modelmatrix",
     id: 6,
-    deadline: "15th April, 2026",
+    deadline: "16th April, 2026",
     title: "MODELMATRIX",
     image: "/modelmatrix.webp",
     date: "TBD",
@@ -381,7 +381,7 @@ export const events = [
   {
     slug: "tarkabitorko",
     id: 7,
-    deadline: "15th April, 2026",
+    deadline: "16th April, 2026",
     title: "TARKA-BITORKO",
     image: "/torkobitorko.webp",
     date: "TBD",
@@ -471,7 +471,7 @@ export const events = [
   {
     slug: "gyanyudh",
     id: 8,
-    deadline: "15th April, 2026",
+    deadline: "16th April, 2026",
     title: "GYAN-YUDH",
     image: "/gyanyudh.webp",
     date: "16th & 18th April 2026",
@@ -548,7 +548,7 @@ export const events = [
   {
     slug: "mechapult",
     id: 9,
-    deadline: "15th April, 2026",
+    deadline: "16th April, 2026",
     title: "MECHAPULT",
     image: "/mechapult.webp",
     date: "15th April 2026",
@@ -622,7 +622,7 @@ export const events = [
   {
     slug: "reelax",
     id: 10,
-    deadline: "12th April, 2026",
+    deadline: "16th April, 2026",
     title: "REELAX",
     image: "/reelax.webp",
     date: "16-18th April, 2026",
@@ -678,7 +678,7 @@ export const events = [
   {
     slug: "efootballpes",
     id: 11,
-    deadline: "12th April, 2026",
+    deadline: "16th April, 2026",
     title: "e-Football PES",
     image: "/efootballpes.webp",
     date: "TBD",
@@ -816,7 +816,7 @@ export const events = [
   {
     slug: "ascent",
     id: 13,
-    deadline: "12th April, 2026 , 10:00 am",
+    deadline: "16th April, 2026",
     title: "Ascent 2026 | Innovation Expo",
     image: "/ascent.webp",
     date: "16th to 18th April 2026",
