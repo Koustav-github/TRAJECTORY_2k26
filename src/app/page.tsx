@@ -13,7 +13,7 @@ export default function Landing() {
       
       <EventTimelineSection />
 
-      {/* <SponsorsSection/> */}
+      <SponsorsSection />
 
       {/* New Mechanical Lens & Featured Events Transition */}
       <CyberneticLensSection />

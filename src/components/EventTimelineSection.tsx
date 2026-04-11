@@ -14,19 +14,19 @@ const EventTimelineSection = () => {
   const events = [
     {
       day: "Day 1",
-      date: "March 23, 2026",
+      date: "April 16, 2026",
       title: "Opening Genesis",
       desc: "The ignition of innovaton. Join us for the grand inauguration, keynote sessions, and high-octane networking with mechanical pioneers.",
     },
     {
       day: "Day 2",
-      date: "March 24, 2026",
+      date: "April 17, 2026",
       title: "The Forge & Think-Tank",
       desc: "A combined powerhouse session: witness intense hardware crafting in the Showdown while tackling complex engineering puzzles in the Brainstorming arena.",
     },
     {
       day: "Day 3",
-      date: "March 25, 2026",
+      date: "April 18, 2026",
       title: "Final Reckoning",
       desc: "The culmination of three days of brilliance. Closing ceremony, winner unveilings, and the grand awards presentation.",
     },
