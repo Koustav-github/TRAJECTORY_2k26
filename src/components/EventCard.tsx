@@ -36,22 +36,22 @@ const EventCard = ({ event }: EventCardProps) => {
   const router = useRouter();
 
   const handleClick = (e:HTMLDivElement) => {
-    if((e.id === "treasurehunt")){
-      toast("🚧 Registration opens soon!", {
-        duration: 3000,
-        style: {
-          borderRadius: "12px",
-          background: "#0f172a",
-          color: "#38bdf8",
-          border: "1px solid rgba(56,189,248,0.3)",
-        },
-      });
-      router.push("./coming_soon");
-    }
-    else{
-      router.push(`./event/${e.id}`);
-    }
-    
+    // if((e.id === "treasurehunt")){
+    //   toast("🚧 Registration opens soon!", {
+    //     duration: 3000,
+    //     style: {
+    //       borderRadius: "12px",
+    //       background: "#0f172a",
+    //       color: "#38bdf8",
+    //       border: "1px solid rgba(56,189,248,0.3)",
+    //     },
+    //   });
+    //   router.push("./coming_soon");
+    // }
+    // else{
+    //   router.push(`./event/${e.id}`);
+    // }
+    router.push(`./event/${e.id}`);
   };
 
 
