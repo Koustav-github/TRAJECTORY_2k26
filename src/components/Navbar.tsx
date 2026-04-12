@@ -1,14 +1,20 @@
 "use client";
 
 import Image from "next/image";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
+import { useState } from "react";
+
+const navLinks = [
+  { href: "/about", label: "About" },
+  { href: "/events", label: "Events" },
+  { href: "/organizers", label: "Organizers" },
+];
 
 const Navbar = () => {
-
-  const navigation = useRouter();
   const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const navVariants = {
     hidden: { opacity: 0, y: -20 },
@@ -28,7 +34,7 @@ const Navbar = () => {
     visible: {
       opacity: 1,
       y: 0,
-       transition: { duration: 0.3, ease: "easeOut" as const }
+      transition: { duration: 0.3, ease: "easeOut" as const },
     },
   };
 
@@ -53,55 +59,79 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="flex items-center gap-2 md:gap-6">
-        <motion.div variants={itemVariants} className="relative group">
-          <Link
-            href={"/about"}
-            className={`relative z-10 px-4 py-2 text-sm md:text-lg font-medium transition-colors duration-300 group-hover:text-[var(--color-primary)] ${
-              isActive("/about") ? "text-[var(--color-primary)]" : "text-[var(--color-accent)]"
-            }`}
-          >
-            About
-            <motion.div
-              className={`absolute inset-0 bg-white/5 rounded-full -z-10 transition-opacity duration-300 ${
-                isActive("/about") ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+      {/* Desktop links */}
+      <div className="hidden md:flex items-center gap-6">
+        {navLinks.map((link) => (
+          <motion.div key={link.href} variants={itemVariants} className="relative group">
+            <Link
+              href={link.href}
+              className={`relative z-10 px-4 py-2 text-lg font-medium transition-colors duration-300 group-hover:text-[var(--color-primary)] ${
+                isActive(link.href) ? "text-[var(--color-primary)]" : "text-[var(--color-accent)]"
               }`}
-              layoutId="nav-hover"
-            />
-          </Link>
-        </motion.div>
-        <motion.div variants={itemVariants} className="relative group">
-          <Link
-            href={"/events"}
-            className={`relative z-10 px-4 py-2 text-sm md:text-lg font-medium transition-colors duration-300 group-hover:text-[var(--color-primary)] ${
-              isActive("/events") ? "text-[var(--color-primary)]" : "text-[var(--color-accent)]"
+            >
+              {link.label}
+              <motion.div
+                className={`absolute inset-0 bg-white/5 rounded-full -z-10 transition-opacity duration-300 ${
+                  isActive(link.href) ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+                }`}
+                layoutId="nav-hover"
+              />
+            </Link>
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Mobile hamburger */}
+      <div className="relative md:hidden">
+        <button
+          onClick={() => setMenuOpen((prev) => !prev)}
+          className="flex flex-col justify-center items-center w-10 h-10 gap-[5px] group"
+          aria-label="Toggle menu"
+        >
+          <span
+            className={`block w-5 h-[2px] bg-[var(--color-accent)] transition-all duration-300 ${
+              menuOpen ? "rotate-45 translate-y-[7px]" : ""
             }`}
-          >
-            Events
-            <motion.div
-              className={`absolute inset-0 bg-white/5 rounded-full -z-10 transition-opacity duration-300 ${
-                isActive("/events") ? "opacity-100" : "opacity-0 group-hover:opacity-100"
-              }`}
-              layoutId="nav-hover"
-            />
-          </Link>
-        </motion.div>
-        <motion.div variants={itemVariants} className="relative group">
-          <Link
-            href={"/organizers"}
-            className={`relative z-10 px-4 py-2 text-sm md:text-lg font-medium transition-colors duration-300 group-hover:text-[var(--color-primary)] ${
-              isActive("/organizers") ? "text-[var(--color-primary)]" : "text-[var(--color-accent)]"
+          />
+          <span
+            className={`block w-5 h-[2px] bg-[var(--color-accent)] transition-all duration-300 ${
+              menuOpen ? "opacity-0" : ""
             }`}
-          >
-            Organizers
+          />
+          <span
+            className={`block w-5 h-[2px] bg-[var(--color-accent)] transition-all duration-300 ${
+              menuOpen ? "-rotate-45 -translate-y-[7px]" : ""
+            }`}
+          />
+        </button>
+
+        {/* Mobile dropdown */}
+        <AnimatePresence>
+          {menuOpen && (
             <motion.div
-              className={`absolute inset-0 bg-white/5 rounded-full -z-10 transition-opacity duration-300 ${
-                isActive("/organizers") ? "opacity-100" : "opacity-0 group-hover:opacity-100"
-              }`}
-              layoutId="nav-hover"
-            />
-          </Link>
-        </motion.div>
+              initial={{ opacity: 0, y: -10, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -10, scale: 0.95 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
+              className="absolute top-14 right-0 w-44 rounded-sm border border-white/10 bg-[var(--color-vanta)]/90 backdrop-blur-md shadow-[0_8px_32px_0_rgba(0,0,0,0.5)] overflow-hidden"
+            >
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  className={`block px-5 py-3 text-sm font-medium transition-colors duration-200 border-b border-white/5 last:border-b-0 ${
+                    isActive(link.href)
+                      ? "text-[var(--color-primary)] bg-white/5"
+                      : "text-[var(--color-accent)] hover:text-[var(--color-primary)] hover:bg-white/5"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </motion.nav>
   );

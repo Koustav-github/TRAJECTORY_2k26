@@ -23,15 +23,23 @@ export const organizerCategories: OrganizerCategory[] = [
   },
   {
     id: 2,
-    title: "Finance Convenor",
-    tagline: "Managing the resources",
+    title: "Onday Convenor",
+    tagline: "Steering the vision",
     members: [
-      { name: "Anirban Sarkar", role: "Finance Head", image: "/organizers/unknown.webp", linkedin: "#" },
-      { name: "Satyam Roy", role: "Finance Co-Head", image: "/organizers/unknown.webp", linkedin: "#" },
+      { name: "Ayushman", role: "Onday Convenor", image: "/organizers/unknown.webp", linkedin: "#" },
     ],
   },
   {
     id: 3,
+    title: "Finance Convenor",
+    tagline: "Managing the resources",
+    members: [
+      { name: "Anirban Sarkar", role: "Finance Convenor", image: "/organizers/anirban.webp", linkedin: "#" },
+      { name: "Satyam Roy", role: "Finance Convenor", image: "/organizers/unknown.webp", linkedin: "#" },
+    ],
+  },
+  {
+    id: 4,
     title: "Tech Team",
     tagline: "Building the backbone",
     members: [
@@ -40,7 +48,7 @@ export const organizerCategories: OrganizerCategory[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Sponsorship Team",
     tagline: "Fueling the mission",
     members: [
@@ -49,7 +57,7 @@ export const organizerCategories: OrganizerCategory[] = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Logistics Team",
     tagline: "Orchestrating the ops",
     members: [
@@ -58,16 +66,16 @@ export const organizerCategories: OrganizerCategory[] = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "PR Team",
     tagline: "Amplifying the voice",
     members: [
-      { name: "Archit Maity", role: "PR Lead", image: "/organizers/archit.webp", linkedin: "#" },
+      { name: "Archit Maiti", role: "PR Lead", image: "/organizers/archit.webp", linkedin: "#" },
       { name: "Diptam", role: "PR Co-Lead", image: "/organizers/unknown.webp", linkedin: "#" },
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: "Events Coordinator",
     tagline: "Curating the experience",
     members: [
@@ -76,7 +84,7 @@ export const organizerCategories: OrganizerCategory[] = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     title: "Content Team",
     tagline: "Crafting the narrative",
     members: [
