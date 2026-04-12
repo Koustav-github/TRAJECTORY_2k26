@@ -14,7 +14,7 @@ export interface OrganizerCategory {
 export const organizerCategories: OrganizerCategory[] = [
   {
     id: 1,
-    title: "General Convenor",
+    title: "General Convenors",
     tagline: "Leading the charge",
     members: [
       { name: "Samriddha", role: "General Convenor", image: "/organizers/samriddha.webp", linkedin: "#" },
@@ -23,15 +23,15 @@ export const organizerCategories: OrganizerCategory[] = [
   },
   {
     id: 2,
-    title: "Onday Convenor",
+    title: "On-Day Convenor",
     tagline: "Steering the vision",
     members: [
-      { name: "Ayushman", role: "Onday Convenor", image: "/organizers/unknown.webp", linkedin: "#" },
+      { name: "Anshuman Singh", role: "On-Day Convenor", image: "/organizers/unknown.webp", linkedin: "#" },
     ],
   },
   {
     id: 3,
-    title: "Finance Convenor",
+    title: "Finance Convenors",
     tagline: "Managing the resources",
     members: [
       { name: "Anirban Sarkar", role: "Finance Convenor", image: "/organizers/anirban.webp", linkedin: "#" },
@@ -40,56 +40,65 @@ export const organizerCategories: OrganizerCategory[] = [
   },
   {
     id: 4,
-    title: "Tech Team",
-    tagline: "Building the backbone",
+    title: "Events Coordinator",
+    tagline: "Curating the experience",
     members: [
-      { name: "Shraman Banerjee", role: "Tech Lead", image: "/organizers/shraman.webp", linkedin: "https://www.linkedin.com/in/shraman-banerjee-385200303?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
-      { name: "Koustav Manna", role: "Tech Co-Lead", image: "/organizers/koustav.webp", linkedin: "https://www.linkedin.com/in/koustav-manna-b6a64330b/" },
+      { name: "Mainak", role: "Events Coordinator", image: "/organizers/mainak.webp", linkedin: "#" },
+      { name: "Sayan Charan", role: "Events Coordinator", image: "/organizers/unknown.webp", linkedin: "#" },
     ],
   },
   {
     id: 5,
-    title: "Sponsorship Team",
+    title: "Sponsorship Leads",
     tagline: "Fueling the mission",
     members: [
       { name: "Naman Roy", role: "Sponsorship Lead", image: "/organizers/unknown.webp", linkedin: "#" },
-      { name: "Nabyendu", role: "Sponsorship Co-Lead", image: "/organizers/nabyendu.webp", linkedin: "#" },
+      { name: "Nabyendu Das", role: "Sponsorship Lead", image: "/organizers/nabyendu.webp", linkedin: "#" },
     ],
   },
   {
     id: 6,
-    title: "Logistics Team",
-    tagline: "Orchestrating the ops",
+    title: "Tech Leads",
+    tagline: "Building the backbone",
     members: [
-      { name: "Anirudh", role: "Logistics Lead", image: "/organizers/unknown.webp", linkedin: "#" },
-      { name: "Debkumar", role: "Logistics Co-Lead", image: "/organizers/debkumar.webp", linkedin: "#" },
+      { name: "Shraman Banerjee", role: "Tech Lead", image: "/organizers/shraman.webp", linkedin: "https://www.linkedin.com/in/shraman-banerjee-385200303" },
+      { name: "Koustav Manna", role: "Tech Lead", image: "/organizers/koustav.webp", linkedin: "https://www.linkedin.com/in/koustav-manna-b6a64330b/" },
     ],
   },
   {
     id: 7,
-    title: "PR Team",
-    tagline: "Amplifying the voice",
+    title: "Logistics Leads",
+    tagline: "Orchestrating the ops",
     members: [
-      { name: "Archit Maiti", role: "PR Lead", image: "/organizers/archit.webp", linkedin: "#" },
-      { name: "Diptam", role: "PR Co-Lead", image: "/organizers/unknown.webp", linkedin: "#" },
+      { name: "Sampad", role: "Logistics Lead", image: "/organizers/unknown.webp", linkedin: "#" },
+      { name: "Debkumar", role: "Logistics Lead", image: "/organizers/debkumar.webp", linkedin: "#" },
     ],
   },
   {
     id: 8,
-    title: "Events Coordinator",
-    tagline: "Curating the experience",
+    title: "PR Leads",
+    tagline: "Amplifying the voice",
     members: [
-      { name: "Mainak", role: "Events Lead", image: "/organizers/mainak.webp", linkedin: "#" },
-      { name: "Charan", role: "Events Co-Lead", image: "/organizers/unknown.webp", linkedin: "#" },
+      { name: "Archit Maiti", role: "PR Lead", image: "/organizers/archit.webp", linkedin: "#" },
+      { name: "Anirudh", role: "PR Lead", image: "/organizers/unknown.webp", linkedin: "#" },
     ],
   },
   {
     id: 9,
-    title: "Content Team",
+    title: "Content Leads",
     tagline: "Crafting the narrative",
     members: [
       { name: "Neelavra Das", role: "Content Lead", image: "/organizers/neelavra.webp", linkedin: "#" },
-      { name: "Ashis", role: "Content Co-Lead", image: "/organizers/ashis.webp", linkedin: "#" },
+      { name: "Arkabrata Das", role: "Content Lead", image: "/organizers/unknown.webp", linkedin: "#" },
+      { name: "Ashis", role: "Content Lead", image: "/organizers/ashis.webp", linkedin: "#" },
+    ],
+  },
+  {
+    id: 10,
+    title: "Sriajn Helper",
+    tagline: "Supporting the cause",
+    members: [
+      { name: "Rishi Sanyal", role: "Sriajn Helper", image: "/organizers/unknown.webp", linkedin: "#" },
     ],
   },
 ];

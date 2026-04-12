@@ -166,7 +166,7 @@ export default function OrganizersPage() {
           {organizerCategories.map((category) => (
             <div
               key={category.id}
-              className={`org-card group relative rounded-sm overflow-hidden border border-cyan-400/30 bg-[#0f172a] shadow-[0_0_15px_rgba(0,255,255,0.08)] hover:shadow-[0_0_30px_rgba(0,255,255,0.2)] transition-shadow duration-500 ${category.id === organizerCategories.length ? "md:col-span-2" : ""}`}
+              className={`org-card group relative rounded-sm overflow-hidden border border-cyan-400/30 bg-[#0f172a] shadow-[0_0_15px_rgba(0,255,255,0.08)] hover:shadow-[0_0_30px_rgba(0,255,255,0.2)] transition-shadow duration-500 ${category.id === 9 || category.id === organizerCategories.length ? "md:col-span-2" : ""}`}
             >
               {/* Top Left Corner */}
               <div className="absolute top-2 left-2 w-6 h-4 border-l-2 border-t-2 border-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
@@ -231,7 +231,7 @@ export default function OrganizersPage() {
                     </div>
 
                     {/* LinkedIn button - Tech Team only */}
-                    {category.id === 4 && (
+                    {category.id === 6 && (
                       <Link
                         href={member.linkedin}
                         target="_blank"
