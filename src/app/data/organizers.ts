@@ -95,7 +95,7 @@ export const organizerCategories: OrganizerCategory[] = [
   },
   {
     id: 10,
-    title: "Sriajn Helper",
+    title: "Srijan Helper",
     tagline: "Supporting the cause",
     members: [
       { name: "Rishi Sanyal", role: "Sriajn Helper", image: "/organizers/unknown.webp", linkedin: "#" },
