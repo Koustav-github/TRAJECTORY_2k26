@@ -77,7 +77,7 @@ export default function SponsorsSection() {
               </div>
               
               <div className="relative h-20 sm:h-24 w-full max-w-[240px] mb-8 mt-2">
-                <Image src="/dkms.webp" alt="DKMS" fill className="object-contain object-center drop-shadow-[0_0_15px_rgba(255,215,0,0.2)] scale-105" />
+                <Image src="/dkms2.webp" alt="DKMS" fill className="object-contain object-center drop-shadow-[0_0_15px_rgba(255,215,0,0.2)] scale-105" />
               </div>
 
               <p className="text-gray-400 text-sm sm:text-base font-medium tracking-wide max-w-sm mb-8 leading-relaxed">DKMS is a global non-profit organization dedicated to fighting blood cancer and blood disorders, such as thalassemia and aplastic anemia, by registering potential blood stem cell donors.</p>
