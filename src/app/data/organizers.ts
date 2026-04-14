@@ -52,8 +52,8 @@ export const organizerCategories: OrganizerCategory[] = [
     title: "Sponsorship Leads",
     tagline: "Fueling the mission",
     members: [
-      { name: "Naman Roy", role: "Sponsorship Lead", image: "/organizers/unknown.webp", linkedin: "" },
-      { name: "Nabyendu Das", role: "Sponsorship Lead", image: "/organizers/nabyendu.webp", linkedin: "https://www.linkedin.com/in/nabyendu-das-596b45266/" },
+      { name: "Naman Ray", role: "Sponsorship Lead", image: "/organizers/naman.webp", linkedin: "#" },
+      { name: "Nabyendu Das", role: "Sponsorship Lead", image: "/organizers/nabyendu.webp", linkedin: "#" },
     ],
   },
   {
@@ -70,8 +70,8 @@ export const organizerCategories: OrganizerCategory[] = [
     title: "Logistics Leads",
     tagline: "Orchestrating the ops",
     members: [
-      { name: "Sampad Chanda", role: "Logistics Lead", image: "/organizers/unknown.webp", linkedin: "https://www.linkedin.com/in/sampad-chanda-4300512b9/" },
-      { name: "Debkumar", role: "Logistics Lead", image: "/organizers/debkumar.webp", linkedin: "#" },
+      { name: "Sampad Chanda", role: "Logistics Lead", image: "/organizers/sampad.webp", linkedin: "https://www.linkedin.com/in/sampad-chanda-4300512b9/" },
+      { name: "Debkumar Dyuari", role: "Logistics Lead", image: "/organizers/debkumar.webp", linkedin: "#" },
     ],
   },
   {
