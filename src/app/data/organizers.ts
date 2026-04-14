@@ -52,7 +52,7 @@ export const organizerCategories: OrganizerCategory[] = [
     title: "Sponsorship Leads",
     tagline: "Fueling the mission",
     members: [
-      { name: "Naman Roy", role: "Sponsorship Lead", image: "/organizers/unknown.webp", linkedin: "#" },
+      { name: "Naman Ray", role: "Sponsorship Lead", image: "/organizers/naman.webp", linkedin: "#" },
       { name: "Nabyendu Das", role: "Sponsorship Lead", image: "/organizers/nabyendu.webp", linkedin: "#" },
     ],
   },
@@ -70,8 +70,8 @@ export const organizerCategories: OrganizerCategory[] = [
     title: "Logistics Leads",
     tagline: "Orchestrating the ops",
     members: [
-      { name: "Sampad", role: "Logistics Lead", image: "/organizers/unknown.webp", linkedin: "#" },
-      { name: "Debkumar", role: "Logistics Lead", image: "/organizers/debkumar.webp", linkedin: "#" },
+      { name: "Sampad", role: "Logistics Lead", image: "/organizers/sampad.webp", linkedin: "#" },
+      { name: "Debkumar Duyari", role: "Logistics Lead", image: "/organizers/debkumar.webp", linkedin: "#" },
     ],
   },
   {
