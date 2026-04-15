@@ -374,7 +374,7 @@ export const events = [
       </>
     ),
     gdrive:
-      "/",
+      "NotFound",
     register:
       "https://unstop.com/competitions/model-matrix-trajectory-2026-jadavpur-university-kolkata-1653458",
   },
